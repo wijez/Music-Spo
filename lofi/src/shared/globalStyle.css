@@ -3,4 +3,9 @@
   height: 100%;
   background-color: cadetblue;
   border-radius: 30px;
+  background-color: #f5f5f5;
+  opacity: 0.8;
+  background-image:  repeating-linear-gradient(45deg, #131111 25%, transparent 25%, transparent 75%, #131111 75%, #131111), repeating-linear-gradient(45deg, #131111 25%, #f5f5f5 25%, #f5f5f5 75%, #131111 75%, #131111);
+  background-position: 0 0, 8px 8px;
+  background-size: 16px 16px;
 }
