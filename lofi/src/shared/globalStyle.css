@@ -9,3 +9,7 @@
   background-position: 0 0, 8px 8px;
   background-size: 16px 16px;
 }
+
+.flex {
+  display: flex;
+}
