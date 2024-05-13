@@ -12,12 +12,9 @@ export default function AudioPLayer({
 }) {
   const [isPlaying, setIsPlaying] = useState(false);
   const [trackProgress, setTrackProgress] = useState(0);
-  // var audioSrc = total[currentIndex]?.track.preview_url;
-  
-  var audioSrc = total[currentIndex]?.track.url
-  ; // Sử dụng trường 'uri' của bài hát
-  const audioRef = useRef(new Audio(total[0]?.track.url
-  ));
+  var audioSrc = total[currentIndex]?.track.preview_url;
+
+  const audioRef = useRef(new Audio(total[0]?.track.preview_url));
 
   const intervalRef = useRef();
 
@@ -118,7 +115,7 @@ export default function AudioPLayer({
           <div className="song-duration flex">
             <p className="duration">0:{addZero(Math.round(trackProgress))}</p>
             <WaveAnimation isPlaying={isPlaying} />
-            <p className="duration">1:30</p>
+            <p className="duration">0:30</p>
           </div>
           <Controls
             isPlaying={isPlaying}
